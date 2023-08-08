@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #444;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #14a2b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #005f6c;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+img {
+    max-width: 200px;
+    border-radius: 5px;
+}
+/* Override default jQuery UI styles */
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;  
+    overflow-x: hidden;  
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
+    z-index: 1000;  /* Sit on top of other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Internet Explorer doesn't support max-height, use height instead */
+* html .ui-autocomplete {
+    height: 200px;
+}
+
+.ui-menu-item {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ui-menu-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* If you're using a divider or any other custom elements within the dropdown, you can add styles for them too */
+.ui-autocomplete-divider {
+    border-top: 1px solid #d4d4d4;
+    margin: 4px 0;
+}
